@@ -1,0 +1,104 @@
+[
+    {
+        "Murder in Edogawa": [
+            {
+                "id": 1,
+                "type": "place",
+                "name": "Your Bedroom",
+                "description": "You are awake.",
+                "options": [2,7]
+            },
+            {
+                "id": 2,
+                "type": "view",
+                "name": "Look out of the window.",
+                "description": "The afternoon sun shines between a blend of sky scrapers and tall mountains. Below, the city streets are packed with red and white lights, the sound of police sirens echo in the background.",
+                "options": null
+            },
+            {
+                "id": 3,
+                "type": "question",
+                "name": "Make some morning brew.",
+                "description": "What do you want to drink?",
+                "options": [5,4,6]
+            },
+            {
+                "id": 4,
+                "type": "view",
+                "name": "Coffee",
+                "description": "Coffee go brr.",
+                "options": [1]
+            },
+            {
+                "id": 5,
+                "type": "question",
+                "name": "Tea",
+                "description": "Making some nice green tea.",
+                "options": [1]
+            },
+            {
+                "id": 6,
+                "type": "question",
+                "name": "Milk",
+                "description": "You pour some white liquid into a glass.",
+                "options": [1]
+            },
+            {
+                "id": 7,
+                "type": "question",
+                "name": "Check your phone",
+                "description": "You check your phone. You have 1 missed call and 2 messages.",
+                "options": [8,9]
+            },
+            {
+                "id": 8,
+                "type": "view",
+                "name": "View missed calls",
+                "description": "It reads: Ompa lompa.",
+                "options": [7]
+            },
+            {
+                "id": 9,
+                "type": "view",
+                "name": "View messages",
+                "description": "First message recieved at 07:21:54 AM. 'christ ken wake the helll up we got clients'. Second message recieved at 07:24:04 AM. 'get your ass over pronto'",
+                "options": [10,11]
+            },
+            {
+                "id": 10,
+                "type": "place",
+                "name": "Drive to work",
+                "description": "You get in car as car goes brr. You walk up the third floor and greet the general inspector.",
+                "options": [1]
+            },
+            {
+                "id": 11,
+                "type": "view",
+                "name": "Order some breakfast",
+                "description": "What do you want to order?",
+                "options": [12,13,14]
+            },
+            {
+                "id": 12,
+                "type": "view",
+                "name": "French toast",
+                "description": "ya it be french",
+                "options": [2]
+            },
+            {
+                "id": 13,
+                "type": "view",
+                "name": "Potat small",
+                "description": "ya it be pottat",
+                "options": [2]
+            },
+            {
+                "id": 14,
+                "type": "view",
+                "name": "Morning fries",
+                "description": "ya it be fries",
+                "options": [2]
+            }
+        ]
+    }
+]

@@ -1,0 +1,8 @@
+Story tree traveller/explorer
+
+It starts with a text. The user can input a selection of things available for the user to do in the current environment.
+For each 'env' there's a list of available options.
+
+
+
+json for inputting story flow and all > some compilation to convert json into a hashmap or something
