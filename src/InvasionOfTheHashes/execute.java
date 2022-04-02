@@ -9,6 +9,8 @@ import InvasionOfTheHashes.TextIO;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,11 +20,12 @@ public class execute {
     private static Map<Long, String> name = new HashMap<Long, String>();
     private static Map<Long, String> description = new HashMap<Long, String>();
     private static Map<Long, int[]> options = new HashMap<>();
+    private static ArrayList<Long> progress = new ArrayList<Long>();
 
     public static void main(String[] args) {
 
         try {
-            FileReader fr = new FileReader("./src/base/murder-in-edogawa.json");
+            FileReader fr = new FileReader("./src/InvasionOfTheHashes/murder-in-edogawa.json");
             JSONParser parser = new JSONParser();
             Object obj = parser.parse(fr);
             JSONArray list = (JSONArray) obj;
@@ -59,11 +62,41 @@ public class execute {
     }
 
     private static void printElement (long id) {
+        progress.add(id);
         System.out.println(name.get(id));
         System.out.println(description.get(id));
         for (int option : options.get(id)) {
             System.out.println(option + " " + name.get((long)option));
         }
-        printElement(TextIO.getlnLong());
+        boolean correctInput = false;
+
+        //check if input is a number
+        while(!correctInput) {
+            long tempNumber = 0;
+            String tempString = TextIO.getln();
+            try {
+                tempNumber = Long.parseLong(tempString);
+                //check if number is one of the options
+                for (int option : options.get(id)) {
+                    if (tempNumber == option) {
+                        printElement(option);
+                        correctInput = true;
+                    }
+                }
+                System.out.println("E: Out of bounds");
+            } catch (NumberFormatException e) {
+
+                if (tempString.equals("x")) {
+                    eXit();
+                    correctInput = true;
+                }
+                System.out.println("E: Input a number");
+            }
+        }
+    }
+
+    private static void eXit() {
+        System.out.println("\nSuccessfully quit");
+        System.out.println(progress.toString());
     }
 }
