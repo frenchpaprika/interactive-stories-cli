@@ -61,6 +61,9 @@ public class execute {
 
     }
 
+    /*
+     * check for input between 0 and list.length()
+     */
     private static void printElement (long id) {
         progress.add(id);
         System.out.println(name.get(id));
@@ -94,6 +97,42 @@ public class execute {
             }
         }
     }
+
+
+//    private static void printElement (long id) {
+//        progress.add(id);
+//        System.out.println(name.get(id));
+//        System.out.println(description.get(id));
+//        for (int option : options.get(id)) {
+//            System.out.println(option + " " + name.get((long)option));
+//        }
+//        boolean correctInput = false;
+//
+//        //check if input is a number
+//        while(!correctInput) {
+//            long tempNumber = 0;
+//            String tempString = TextIO.getln();
+//            try {
+//                tempNumber = Long.parseLong(tempString);
+//                //check if number is one of the options
+//                for (int option : options.get(id)) {
+//                    if (tempNumber == option) {
+//                        printElement(option);
+//                        correctInput = true;
+//                    }
+//                }
+//                System.out.println("E: Out of bounds");
+//            } catch (NumberFormatException e) {
+//
+//                if (tempString.equals("x")) {
+//                    eXit();
+//                    correctInput = true;
+//                }
+//                System.out.println("E: Input a number");
+//            }
+//        }
+//    }
+
 
     private static void eXit() {
         System.out.println("\nSuccessfully quit");

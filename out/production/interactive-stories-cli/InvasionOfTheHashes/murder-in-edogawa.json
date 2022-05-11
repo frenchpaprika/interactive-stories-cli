@@ -14,7 +14,9 @@
         "type": "action",
         "name": "Look out of the window.",
         "description": "The afternoon sun shines between a blend of sky scrapers and tall mountains. Below, the city streets are packed with red and white lights, the sound of police sirens echo in the background.",
-        "options": null
+        "options": [
+            1
+        ]
     },
     {
         "id": 3,
