@@ -1,0 +1,23 @@
+
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(ü¨ı
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(É‡Ø…
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(ù¾ûå
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(ßÛ¡üÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(­ŒÏ˜
+Q	java:S125g"<This block of commented-out lines of code should be removed.(ˆÄº’
+T	java:S106‹"9Replace this use of System.out or System.err by a logger.(Øì˜øÿÿÿÿ
+T	java:S106Œ"9Replace this use of System.out or System.err by a logger.(‚›’ëûÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¦Ş«Ùúÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(öã»œüÿÿÿÿ
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ÄÁö
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Û²åª
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«áš’ÿÿÿÿÿ
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ëù¢e
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«¬·É
+^
+java:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(ÉàÈ

@@ -84,15 +84,17 @@ public class execute {
                 if (tempNumber >= 0 && tempNumber < options.get(id).length) {
                     printElement(options.get(id)[(int) tempNumber]);
                     correctInput = true;
+                } else {
+                    System.out.println("E: Out of bounds");
                 }
-                System.out.println("E: Out of bounds");
             } catch (NumberFormatException e) {
 
                 if (tempString.equals("x")) {
                     eXit();
                     correctInput = true;
+                } else {
+                    System.out.println("E: Input a number");
                 }
-                System.out.println("E: Input a number");
             }
         }
     }
